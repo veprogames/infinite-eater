@@ -923,7 +923,7 @@ function clearGameData()
 {
     if(confirm("Do you really want to start over completely? There's no going back!"))
     {
-        localStorage.clear();
+        localStorage.removeItem("InfEaterGame");
         location.reload();
     }
 }
